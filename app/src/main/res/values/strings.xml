@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="wellcome">Wellcome!</string>
+    <string name="chao_mung_quai_lai">Chào mừng bạn đã quay trở lại,</string>
+    <string name="moi_dang_nhap">Vui lòng đăng nhập để tiếp tục</string>
+    <string name="nhap_username">Nhập username</string>
+    <string name="nhap_password">Nhập password</string>
+    <string name="ghi_nho">Ghi nhớ tài khoản</string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="dang_ky">Đăng ký</string>
+    <string name="chao_mung">Chào mừng bạn,</string>
+    <string name="moi_dang_ky">Đăng ký tài khoản</string>
+    <string name="nhap_lai_password">Nhập lại password</string>
+    <string name="tro_ve">Trở về</string>
+    <string name="quan_ly">Quản lý nhân sự</string>
+    <string name="fpoly_software_company">Fpoly software company</string>
+    <string name="phong_ban">Phòng ban</string>
+    <string name="nhan_vien">Nhân viên</string>
+    <string name="thoat">Thoát</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="add">thêm phòng nhân viên mới</string>
+    <string name="ma_nv">Mã NV: </string>
+    <string name="ho_ten">Họ tên: </string>
+    <string name="phong_ban2">Phòng ban: </string>
+    <string name="update">update</string>
+    <string name="delete">delete</string>
+    <string name="nhap_personname">Nhập tên nhân viên</string>
+    <string name="nhap_depart">Nhập phòng ban</string>
+    <string name="save">Lưu</string>
+    <string name="add_update">Thêm - Sửa nhân viên</string>
+    <string name="nhap_id">Nhập mã nhân viên</string>
+</resources>
