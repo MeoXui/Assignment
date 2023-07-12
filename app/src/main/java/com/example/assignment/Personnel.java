@@ -50,7 +50,7 @@ public class Personnel extends AppCompatActivity {
     Apdater apdater;
 
     void refresh(){
-        apdater= new Apdater(this,personnelList);
+        apdater= new Apdater(this, personnelList);
         lvPersonnel.setAdapter(apdater);
         writeData();
     }
@@ -199,7 +199,7 @@ public class Personnel extends AppCompatActivity {
                 });
     }
 
-    public class Apdater extends BaseAdapter implements Filterable {
+    public static class Apdater extends BaseAdapter implements Filterable {
 
         private final Context context;
         private List<Person> list;

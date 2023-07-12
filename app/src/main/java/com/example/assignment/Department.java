@@ -46,7 +46,7 @@ public class Department extends AppCompatActivity {
         list.add("Hành chính");
         list.add("Nhân sự");
 
-        apdater = new Apdater(this,list);
+        apdater = new Apdater(this, list);
         listDepartment.setAdapter(apdater);
 
         listDepartment.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -89,7 +89,7 @@ public class Department extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public class Apdater extends BaseAdapter implements Filterable {
+    public static class Apdater extends BaseAdapter implements Filterable {
 
         private final Context context;
         private List<String> list;

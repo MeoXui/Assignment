@@ -26,11 +26,11 @@ public class Login extends AppCompatActivity {
             REMEMBER = "remembered",
             NAME = "name_remembered",
             PASS = "pass_remembered";
-    EditText edtUsername = findViewById(R.id.edt_username),
-            edtPassword = findViewById(R.id.edt_password);
+    EditText edtUsername = findViewById(R.id.edt_username_log),
+            edtPassword = findViewById(R.id.edt_password_log);
     CheckBox chkRemember = findViewById(R.id.chk_remember);
     Button btnLogin = findViewById(R.id.btn_login),
-            btnRegister = findViewById(R.id.btn_register);
+            btnRegister = findViewById(R.id.btn_register_log);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +78,7 @@ public class Login extends AppCompatActivity {
                     Toast.makeText(Login.this,"Đăng nhập thành công.", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                     finish();
-                } else Toast.makeText(Login.this,"Username hoặc password chứ đúng.", Toast.LENGTH_SHORT).show();
+                } else Toast.makeText(Login.this,"Username hoặc password chưa đúng.", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -86,7 +86,7 @@ public class Login extends AppCompatActivity {
     private void readUserListData(String fileName) {
         List<User> dataFile = new ArrayList<>();
         try {
-            FileInputStream fis = Login.this.openFileInput(fileName);
+            FileInputStream fis = this.openFileInput(fileName);
             ObjectInputStream ois = new ObjectInputStream(fis);
             dataFile = (List<User>) ois.readObject();
             ois.close();

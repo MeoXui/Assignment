@@ -19,10 +19,10 @@ import java.util.List;
 
 public class Register extends AppCompatActivity {
 
-    EditText edtUsername = findViewById(R.id.edt_username),
-            edtPassword = findViewById(R.id.edt_password),
+    EditText edtUsername = findViewById(R.id.edt_username_reg),
+            edtPassword = findViewById(R.id.edt_password_reg),
             edtRepassword = findViewById(R.id.edt_repassword);
-    Button btnRegister = findViewById(R.id.btn_register),
+    Button btnRegister = findViewById(R.id.btn_register_reg),
             btnBack = findViewById(R.id.btn_back);
 
     @Override
@@ -65,7 +65,7 @@ public class Register extends AppCompatActivity {
     private void writeUserListData(String fileName) {
         List<User> dataFile =  userList;
         try {
-            FileOutputStream fos = Register.this.openFileOutput(fileName, Context.MODE_PRIVATE);
+            FileOutputStream fos = this.openFileOutput(fileName, Context.MODE_PRIVATE);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(dataFile);
             oos.close();

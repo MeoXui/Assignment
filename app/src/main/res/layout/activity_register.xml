@@ -28,7 +28,7 @@
         android:textColor="@color/black"/>
 
     <EditText
-        android:id="@+id/edt_username"
+        android:id="@+id/edt_username_reg"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="5dp"
@@ -42,7 +42,7 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/edt_password"
+        android:id="@+id/edt_password_reg"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="5dp"
@@ -70,7 +70,7 @@
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_register_reg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
